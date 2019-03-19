@@ -1,0 +1,18 @@
+<h1>My quotes app</h1>
+<div class="container">
+    <div class="row">
+        <app-quote-form></app-quote-form>
+    </div>
+    <ul>
+            <app-quote-form></app-quote-form>
+        <div *ngFor='let quote of quotes;let i = index'>
+            <ul>
+                 <li appStrikethrough>{{quote.name}}</li>
+            </ul>
+            <button  (click)='toogleDetails(i)'>Toogle Details</button>
+    
+        <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
+    <p *ngIf='quotes.length > 4'>You have too many quotes</p>
+    
+</div>
+
