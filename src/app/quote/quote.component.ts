@@ -15,6 +15,7 @@ export class QuoteComponent implements OnInit {
     new Quote(5, 'You cannot shake hands with a clenched fist','Indira Gandhi', new Date(1993, 4, 3)),
     new Quote(6, 'Learn to say no to the good so you can say yes to the best','John C', new Date(1993, 4, 3)),
  ]
+ 
  completeQuote(isComplete,index){
   if (isComplete){
     this.quotes.splice(index,1);
@@ -29,6 +30,7 @@ export class QuoteComponent implements OnInit {
     quote.id = quoteLen + 1;
     this.quotes.push(quote);
   }
+  
   
   constructor() { }
 
