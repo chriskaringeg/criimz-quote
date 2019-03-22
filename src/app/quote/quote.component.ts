@@ -23,6 +23,12 @@ export class QuoteComponent implements OnInit {
   toogleDetails(index){
   this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
+
+  addNewQuote(quote){
+    const quoteLen = this.quotes.length;
+    quote.id = quoteLen + 1;
+    this.quotes.push(quote);
+  }
   
   constructor() { }
 
