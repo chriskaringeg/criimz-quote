@@ -24,7 +24,7 @@
                </div>
 
            <div class="form-group">
-               <label for="person"><strong>Name</strong></label>
+               <label for="person"><strong>Your Name</strong></label>
                <input type="text"  class="form-control" id="author" [(ngModel)]="newQuote.person" name="person" #person="ngModel" required>
 
                <div [hidden]="person.valid || person.pristine" class="alert alert-danger">
