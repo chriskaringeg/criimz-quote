@@ -16,11 +16,11 @@ export class QuoteComponent implements OnInit {
     new Quote(6, 'Learn to say no to the good so you can say yes to the best','John C', new Date(1993, 4, 3)),
  ]
  
- completeQuote(isComplete,index){
+ completeGoal(isComplete,index){
   if (isComplete){
-    this.quotes.splice(index,1);
-  }
-}
+      this.quotes.splice(index,1);
+      }
+      }
   toogleDetails(index){
   this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
