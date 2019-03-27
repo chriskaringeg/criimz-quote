@@ -1,4 +1,4 @@
-.displaytext {
+/* .displaytext {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 15px;
     
@@ -29,4 +29,5 @@
     margin-left: 50%;
     margin-top: -10%;
   }
-  
+   */
+  .container {font-family: 'Viga', sans-serif;}

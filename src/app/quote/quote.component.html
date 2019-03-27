@@ -1,17 +1,31 @@
-<h1> Criimz-quotes app</h1>
-<div class="container">
-    <div class="row">
-        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-    </div>
-    <ul>
-        <div *ngFor='let quote of quotes;let i = index'>
-            <ul>
-                 <li appStrikethrough>{{quote.name}}</li>
-            </ul>
-            <button  (click)='toogleDetails(i)'>Toogle Details</button>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Jura|Niconne|Russo+One|Viga" rel="stylesheet">
+
+<h1 style="font-family: 'Viga', sans-serif;"> Criimz-quotes app</h1>
+<div class=row>
+        <app-quote-form class="col-md-4" (addQuote)="addNewQuote($event)"></app-quote-form>
     
-            <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completequote($event,i)'></app-quote-details>
-        </div>
-    </ul>
+    
+            <div class="col-md-4">
+                    <div *ngFor='let quote of quotes;let i = index'>
+                            <ul>
+                                 <li appStrikethrough>{{quote.name}}</li>
+                            </ul>
+                            <button  (click)='toogleDetails(i)'>Toogle Details</button>
+                    
+                            <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completequote($event,i)'></app-quote-details>
+                        </div>
+
+            </div>
+            
+            
 </div>
+
+  
+        
+      
+
+
+
+
+
 
