@@ -12,7 +12,7 @@
                             </ul>
                             <button  (click)='toogleDetails(i)'>Toogle Details</button>
                     
-                            <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completequote($event,i)'></app-quote-details>
+                            <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
                         </div>
 
             </div>

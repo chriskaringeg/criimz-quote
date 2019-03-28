@@ -1,6 +1,9 @@
 <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Jura|Niconne|Russo+One|Viga" rel="stylesheet">
 
 <h2 style="font-family: 'Viga', sans-serif;" >{{quote.description}}</h2>
+<p>{{quote.description}}</p>
+<p>This quote will be completed in {{quote.completeDate|dateCount}} days</p>
+<button (click) = 'quoteDelete(true)'> Delete Quote </button>
 
 
 <!-- Like Section -->
